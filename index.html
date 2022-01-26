@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+
+	<button type="button" class="btn-toggle" id="btnToggle">Toggle</button>
 	<section>
 		<div class="sidebar">
 			<h4>JQuery</h4>
@@ -174,7 +176,29 @@
 	</section>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script>
+
 		$(document).ready(function(){
+			let toggleClicked = false;
+			console.log(toggleClicked);
+			$(window).resize(function(){
+				if(($(window).width() < 480)&&(toggleClicked == false)){
+					$(".sidebar").hide("slow");
+				}else{
+					$(".sidebar").show();
+				}
+			});
+			$("#btnToggle").click(function(){
+				if( toggleClicked == false){
+					$(".sidebar").show("slow");
+					toggleClicked = true;
+					
+					console.log(toggleClicked);					
+				}else{
+					toggleClicked = false;
+					$(".sidebar").hide("slow");
+					console.log(toggleClicked);					
+				}
+			})
 			$("#btnClick").click(function(){
 				alert("Button has been clicked!");
 			});

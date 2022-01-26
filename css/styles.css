@@ -84,27 +84,84 @@ body{
 }
 
 
+
 /* Mobile View */
 @media only screen and (max-width: 480px){
-
+	.btn-toggle{
+		position: absolute;
+		top: 2rem;
+		right: 2.5rem;
+		color: #fff;
+		background-color: #0769ad;
+		border: none;
+		border-radius:5px 5px;
+		transition: 0.3s;
+		margin-right: 0.5rem;
+		font-size: 0.9rem;
+		padding: 0.4rem 0.8rem;
+		transition: 0.3s;
+	}
+		
+		section > .sidebar > h4{
+			font-size: 1.2rem;				
+			margin: 0.7rem 1.1rem;
+		}
+		section > .sidebar > a{
+			font-size: 0.85rem;
+			padding: 0.2rem 1.1rem 0.2rem 1.1rem;
+		}
+	section{
+		display: flex;
+	}	
+		section > .main-body div .box{
+			padding: 0.5rem 1rem;
+		}
+				section > .main-body div .box > p{
+					font-size: 0.8rem;
+				}
+				section > .main-body div .box > button{
+					font-size: 0.8rem;
+					padding: 0.4rem 0.8rem;
+				}	
 }
 
 /* Tablet View */
 @media only screen and (min-width: 481px){
+	.btn-toggle{
+		display: none;
+	}	
 	section{
 		display: flex;
 	}
 
+		section > .sidebar > h4{
+			font-size: 1.5rem;				
+			margin: 1rem 1.5rem;
+		}
+		section > .sidebar > a{
+			font-size: 0.85rem;
+			padding: 0.2rem 1.5rem 0.2rem 1.5rem;
+		}
+		section > .main-body div .box{
+			padding: 1rem 1.8rem;
+		}
+				section > .main-body div .box > p{
+					font-size: 0.8rem;
+				}
+				section > .main-body div .box > button{
+					font-size: 1rem;
+					padding: 0.5rem 1rem;
+				}
 }
 
 /* Laptop View */
 @media only screen and (min-width: 1024px){
+	.btn-toggle{
+		display: none;
+	}	
 	section{
 		display: flex;
 	}
-		section .sidebar{
-
-		}
 			section > .sidebar > h4{
 				font-size: 1.5rem;				
 				margin: 1rem 1.5rem;
