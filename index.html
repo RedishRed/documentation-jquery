@@ -65,7 +65,7 @@
 				<p>display or hide the matched elements</p>
 				<div class="box">
 					<p>Click the <span>toggle</span> button to show or hide this paragraph</p>
-					<button type="button" id="btnToggle">toggle</button>
+					<button type="button" id="btnToggled">toggle</button>
 				</div>
 			</div>
 			<div id="slideDown">
@@ -113,7 +113,7 @@
 				<p>.addClass() method manipulated the className property of the selected elements, not the class attribute. Once the property was changed, it was the browser that updated the attribute accordingly.</p>
 				<div class="box">
 					<p>Click the <span>add class</span> button to add class on this text.</p>
-					<button type="button" id="btnAddClass">remove class</button><button type="button" id="btnRemoveClass">remove class</button>
+					<button type="button" id="btnAddClass">add class</button><button type="button" id="btnRemoveClass">remove class</button>
 				</div>
 			</div>
 			<div id="before">
@@ -206,7 +206,7 @@
 			$("#btnShow").click(function(){
 				$("#hide > .box > p").show("slow");
 			});
-			$("#btnToggle").click(function(){
+			$("#btnToggled").click(function(){
 				$("#toggle > .box > p").toggle("slow");
 			});
 			$("#slideDown > .box > p").slideUp();
