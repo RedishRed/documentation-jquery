@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JQuery Mini Documentation</title>
+	<link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+	<section>
+		<div class="sidebar">
+			<h4>JQuery</h4>
+			<a href="#click">click</a>
+			<a href="#hide">hide</a>
+			<a href="#show">show</a>
+			<a href="#toggle">toggle</a>
+			<a href="#slideDown">slideDown()</a>
+			<a href="#slideUp">slideUp</a>
+			<a href="#slideToggle">slideToggle</a>
+			<a href="#fadeIn">fadeIn</a>
+			<a href="#fadeOut">fadeOut</a>
+			<a href="#addClass">addClass</a>
+			<a href="#before">before</a>
+			<a href="#after">after</a>
+			<a href="#append">append</a>
+			<a href="#html">html</a>
+			<a href="#attr">attr</a>
+			<a href="#val">val</a>
+			<a href="#text">text</a>
+		</div>
+		<div class="main-body">
+			<div class="main-body__header">
+				<h3>Welcome to JQuery</h3>
+				<p>jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax. It is free, open-source software using the permissive MIT License.</p>
+			</div>
+			<div id="click">
+				<h4>click()</h4>
+				<p>Bind an event handler to the "click" JavaScript event, or trigger that event on an element.</p>
+				<div class="box">
+					<p>Click the <span>click</span> button to show the alert message.</p>
+					<button type="button" id="btnClick">click</button>
+				</div>
+			</div>
+			<div id="hide">
+				<h4>hide()</h4>
+				<p>method animates the width, height, and opacity of the matched elements simultaneously.</p>
+				<div class="box">
+					<p>Click the <span>hide</span> button to hide this message</p>
+					<button type="button" id="btnHide">hide</button>
+				</div>
+			</div>
+			<div id="show">
+				<h4>show()</h4>
+				<p>display the matched elements.</p>
+				<div class="box">
+					<p>Click the <span>show</span> button to show the hidden message in the hide paragraph</p>
+					<button type="button" id="btnShow">show</button>
+				</div>
+			</div>
+			<div id="toggle">
+				<h4>toggle()</h4>
+				<p>display or hide the matched elements</p>
+				<div class="box">
+					<p>Click the <span>toggle</span> button to show or hide this paragraph</p>
+					<button type="button" id="btnToggle">toggle</button>
+				</div>
+			</div>
+			<div id="slideDown">
+				<h4>slideDown()</h4>
+				<p>The .slideDown() method animates the height of the matched elements. This causes lower parts of the page to slide down, making way for the revealed items.</p>
+				<div class="box">
+					<p>Hello from <span>slide down</span> !  </p>
+					<button type="button" id="btnSlideDown">slide down</button>
+				</div>
+			</div>
+			<div id="slideUp">
+				<h4>slideUp()</h4>
+				<p>The .slideUp() method animates the height of the matched elements. This causes lower parts of the page to slide up, appearing to conceal the items.</p>
+				<div class="box">
+					<p>Click the <span>slide up</span> button to see the effect on this paragraph.</p>
+					<button type="button" id="btnSlideUp">slide up</button>
+				</div>
+			</div>
+			<div id="slideToggle">
+				<h4>slideToggle()</h4>
+				<p>The .slideToggle() method animates the height of the matched elements. This causes lower parts of the page to slide up or down, appearing to reveal or conceal the items. If the element is initially displayed, it will be hidden; if hidden, it will be shown.</p>
+				<div class="box">
+					<p>Click the <span>slide toggle</span> button to see the effect on this paragraph.</span></p>
+					<button type="button" id="btnSlideToggle">slide toggle</button>
+				</div>
+			</div>
+			<div id="fadeIn">
+				<h4>fadeIn()</h4>
+				<p>The .fadeIn() method animates the opacity of the matched elements. It is similar to the .fadeTo() method but that method does not unhide the element and can specify the final opacity level.</p>
+				<div class="box">
+					<p>Hooray you clicked the <span>fade in</span> button!</p>
+					<button type="button" id="btnFadeIn">fade in</button>
+				</div>
+			</div>
+			<div id="fadeOut">
+				<h4>fadeOut()</h4>
+				<p>The .fadeOut() method animates the opacity of the matched elements. Once the opacity reaches 0, the display style property is set to none, so the element no longer affects the layout of the page.</p>
+				<div class="box">
+					<p>Click the <span>fade out</span> button to hid this message.</p>
+					<button type="button" id="btnFadeOut">fade out</button>
+				</div>
+			</div>
+			<div id="addClass">
+				<h4>addClass()</h4>
+				<p>.addClass() method manipulated the className property of the selected elements, not the class attribute. Once the property was changed, it was the browser that updated the attribute accordingly.</p>
+				<div class="box">
+					<p>Click the <span>add class</span> button to add class on this text.</p>
+					<button type="button" id="btnAddClass">remove class</button><button type="button" id="btnRemoveClass">remove class</button>
+				</div>
+			</div>
+			<div id="before">
+				<h4>before()</h4>
+				<p>The .before() and .insertBefore() methods perform the same task. The major difference is in the syntax—specifically, in the placement of the content and target. </p>
+				<div class="box">
+					<p>Click the <span>before</span> button to align the button before this paragraph.</p>
+					<button type="button" id="btnBefore">before</button>
+				</div>
+			</div>
+			<div id="after">
+				<h4>after()</h4>
+				<p>The .after() and .insertAfter() methods perform the same task. The major difference is in the syntax—specifically, in the placement of the content and target.</p>
+				<div class="box">
+					<p>Click the <span>after</span> button to align the above paragraph after or below this container</p>
+					<button type="button" id="btnAfter">after</button>
+				</div>
+			</div>
+			<div id="append">
+				<h4>append()</h4>
+				<p>The .append() method inserts the specified content as the last child of each element in the jQuery collection (To insert it as the first child, use .prepend()).</p>
+				<div class="box">
+					<p>Click the <span>append</span> button to align this paragraph to the last element.</p>
+					<button type="button" id="btnAppend">append</button>
+				</div>
+			</div>
+			<div id="html">
+				<h4>html()</h4>
+				<p>In an HTML document, .html() can be used to get the contents of any element.</p>
+				<div class="box">
+					<p>Click the <span>html</span> button to see the code for this html.</p>
+					<button type="button" id="btnHtml">html</button>
+				</div>
+			</div>
+			<div id="attr">
+				<h4>attr()</h4>
+				<p>Get the value of an attribute for the first element in the set of matched elements or set one or more attributes for every matched element.</p>
+				<div class="box">	
+					<p>Click the <span>attr</span> button to see the effect of this button.</p>
+					<button type="button" id="btnAttr">attr</button>
+				</div>
+			</div>
+			<div id="val">
+				<h4>val()</h4>
+				<p>The .val() method is primarily used to get the values of form elements such as input, select and textarea. </p>
+				<div class="box">
+					<p>Click the <span>val</span> button to change the value inside the input text field.</p>
+					<input type="text" id="valTextField" value="Click the button to enter a value"/>
+					<button type="button" id="btnVal">val</button>
+				</div>
+			</div>
+			<div id="text">
+				<h4>text()</h4>
+				<p>The result of the .text() method is a string containing the combined text of all matched elements.</p>
+				<div class="box">
+					<p>Click the <span>text</span> button to change the paragraph on this text.</p>
+					<button type="button" id="btnText">text</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#btnClick").click(function(){
+				alert("Button has been clicked!");
+			});
+			$("#btnHide").click(function(){
+				$("#hide > .box > p").hide("slow");
+			});
+			$("#btnShow").click(function(){
+				$("#hide > .box > p").show("slow");
+			});
+			$("#btnToggle").click(function(){
+				$("#toggle > .box > p").toggle("slow");
+			});
+			$("#slideDown > .box > p").slideUp();
+			$("#btnSlideDown").click(function(){
+				$("#slideDown > .box > p").slideDown();
+			});
+			$("#btnSlideUp").click(function(){
+				$("#slideUp > .box > p").slideUp();
+			});
+			$("#btnSlideToggle").click(function(){
+				$("#slideToggle > .box > p").slideToggle();
+			});
+			$("#fadeIn > .box > p").fadeOut("slow");
+			$("#btnFadeIn").click(function(){
+				$("#fadeIn > .box > p").fadeIn("slow");
+			});
+			$("#btnFadeOut").click(function(){
+				$("#fadeOut > .box > p").fadeOut("slow");
+			});
+			$("#btnAddClass").click(function(){
+				$("#addClass > .box > p").addClass("title");
+			});
+			$("#btnRemoveClass").click(function(){
+				$("#addClass > .box > p").removeClass("title");
+			});
+			$("#btnBefore").click(function(){
+				$("#before > .box > p").before($("#before > .box > button"));
+			});
+			$("#btnAfter").click(function(){
+				$("#after > .box").after($("#after > p"))
+			});
+			$("#btnAppend").click(function(){
+				$("#append").append($("#append > .box > p"));
+			});
+			$("#btnHtml").click(function(){
+				let htmlValue = $("#html > .box > p").html();	
+				$("#html > .box > p").text(htmlValue);	
+			});
+			$("#btnAttr").click(function(){
+				$("#attr > .box > p").attr("style","font-size: 1.1rem");
+			});
+			$("#btnVal").click(function(){
+				$("#valTextField").val("this is a new value");
+			});
+			$("#btnText").click(function(){
+				$("#text > .box > p").text("Hello from JQuery!");
+			});
+		});
+	</script>
+</body>
+</html>

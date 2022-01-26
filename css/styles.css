@@ -1,0 +1,146 @@
+
+*{
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+	section .sidebar{
+		vertical-align: top;
+		background-color: #0769ad;
+	}
+		section .sidebar > a{
+			text-decoration: none;	
+			display: block;
+			color: #f4f6f8;
+			transition:0.3s;
+		}
+		section .sidebar > a:hover{
+			background-color:#06568e;
+		}
+		section > .sidebar > h4{
+			color: #ffffff;
+		}
+
+	section .main-body{
+		width: 100%;
+		padding: 1rem 3rem;
+	}
+		section > .main-body > .main-body__header{
+			border-bottom: 1px solid #c4c4c4;
+		
+		}	
+			section > .main-body > .main-body__header > h3{
+				color: #0769ad;
+			}
+			section > .main-body > .main-body__header > p, section > .main-body div > p{
+				color: #304529;
+				text-align: justify;
+			}
+		section > .main-body div > h4{
+			margin-bottom: 0;
+			color: #06568e;
+		}
+			section > .main-body div .box{
+				background-color: #f2f2f2;
+				border-radius: 10px 10px;
+			}
+				section > .main-body div .box > button{
+					color: #fff;
+					background-color: #0769ad;
+					border: none;
+					border-radius:5px 5px;
+					transition: 0.3s;
+					margin-right: 0.5rem;
+				}
+				section > .main-body div .box > button:hover{
+					background-color: #06568e;
+					color: #fff;
+				}
+					section > .main-body div .box > p > span{
+						background-color: #adb5bd;
+						padding: 0.2rem 0.5rem;
+						border-radius: 5px 5px;
+						color: #f3f5fa;
+					}
+
+.title{
+	font-weight: bold;
+	font-size: 1.1rem;
+	transition: 0.3s;
+}
+
+#valTextField{
+	display: block;
+	margin-bottom: 1rem;
+	min-height:30px;
+}
+
+
+/* Mobile View */
+@media only screen and (max-width: 480px){
+
+}
+
+/* Tablet View */
+@media only screen and (min-width: 481px){
+	section{
+		display: flex;
+	}
+
+}
+
+/* Laptop View */
+@media only screen and (min-width: 1024px){
+	section{
+		display: flex;
+	}
+		section .sidebar{
+
+		}
+			section > .sidebar > h4{
+				font-size: 1.5rem;				
+				margin: 1rem 1.5rem;
+			}
+			section > .sidebar > a{
+				font-size: 0.85rem;
+				padding: 0.2rem 1.5rem 0.2rem 1.5rem;
+			}
+
+		section > .main-body{
+			
+		}
+			section > .main-body > .main-body__header{
+				margin-bottom:2rem;
+				padding-bottom: 1rem;
+			}	
+				section > .main-body > .main-body__header > h3{
+					font-size: 2rem;
+					margin-bottom: 0;
+				}
+				section > .main-body > .main-body__header > p, section > .main-body > div > p{
+					font-size: 0.9rem;
+					width: 80%;
+				}
+			section > .main-body div > h4{
+				font-size: 1.2rem;
+			}
+			section > .main-body div .box{
+				padding: 1rem 1.8rem;
+			}
+				section > .main-body div .box > p{
+					font-size: 0.8rem;
+				}
+				section > .main-body div .box > button{
+					font-size: 1rem;
+					padding: 0.5rem 1rem;
+				}
+}
+
