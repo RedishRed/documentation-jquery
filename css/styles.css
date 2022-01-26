@@ -88,9 +88,6 @@ body{
 /* Mobile View */
 @media only screen and (max-width: 480px){
 	.btn-toggle{
-		position: absolute;
-		top: 2rem;
-		right: 2.5rem;
 		color: #fff;
 		background-color: #0769ad;
 		border: none;

@@ -8,7 +8,7 @@
 </head>
 <body>
 
-	<button type="button" class="btn-toggle" id="btnToggle">Toggle</button>
+
 	<section>
 		<div class="sidebar">
 			<h4>JQuery</h4>
@@ -32,6 +32,7 @@
 		</div>
 		<div class="main-body">
 			<div class="main-body__header">
+				<button type="button" class="btn-toggle" id="btnToggle">Toggle</button>
 				<h3>Welcome to JQuery</h3>
 				<p>jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax. It is free, open-source software using the permissive MIT License.</p>
 			</div>
@@ -179,7 +180,6 @@
 
 		$(document).ready(function(){
 			let toggleClicked = false;
-			console.log(toggleClicked);
 			$(window).resize(function(){
 				if(($(window).width() < 480)&&(toggleClicked == false)){
 					$(".sidebar").hide("slow");
@@ -190,15 +190,13 @@
 			$("#btnToggle").click(function(){
 				if( toggleClicked == false){
 					$(".sidebar").show("slow");
-					toggleClicked = true;
-					
-					console.log(toggleClicked);					
+					toggleClicked = true;					
 				}else{
 					toggleClicked = false;
-					$(".sidebar").hide("slow");
-					console.log(toggleClicked);					
+					$(".sidebar").hide("slow");				
 				}
 			})
+
 			$("#btnClick").click(function(){
 				alert("Button has been clicked!");
 			});
